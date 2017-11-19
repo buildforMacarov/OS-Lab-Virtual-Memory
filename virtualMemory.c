@@ -75,9 +75,5 @@ int main(int argc, char * argv[])
 		shmdt(page_table);  // detach from page table
 		shmctl(shmid, IPC_RMID, 0);  // destroy page table
 
-		// printf("In Parent.\tMy ID: %d\n", getpid());
-		// printf("Wait is succesful with status %d\n", status);
-	}
-
 	return 0;
 }
